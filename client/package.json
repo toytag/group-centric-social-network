@@ -1,0 +1,72 @@
+{
+  "name": "client",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.1.0",
+    "@mui/material": "^5.1.0",
+    "@mui/styles": "^5.1.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "node-fetch": "^3.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-waypoint": "^10.1.0",
+    "react-window": "^1.8.6",
+    "socket.io-client": "^4.4.0",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "react-scripts test --coverage --forceExit",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --ext .js,.jsx --ignore-pattern *.test.js --ignore-pattern *.test.jsx"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/utils/*.{js,jsx}",
+      "src/pages/**/*.{js,jsx}",
+      "src/components/**/*.{js,jsx}",
+      "!src/index.jsx",
+      "!src/reportWebVitals.js",
+      "!src/setupTests.js"
+    ],
+    "resetMocks": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^26.6.0",
+    "jest-fetch-mock": "^3.0.3",
+    "react-test-renderer": "^17.0.2"
+  }
+}
